@@ -55,6 +55,17 @@ public class Main {
         double soucet = a + b;
         System.out.println(soucet);*/
 
+        //Uzivatel zada slovo, ve vipisu budu vsechna pismena velke
+        /*Scanner mujScanner = new Scanner(System.in);
+        System.out.println("Zadej sve slovo:");
+        String slovo = mujScanner.nextLine();
+
+        System.out.println(slovo.);*/
+
+
+
+
+
 
 
 
