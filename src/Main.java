@@ -26,11 +26,28 @@ public class Main {
         System.out.println(pozdrav2 + " " + jmeno);*/
 
         //Uloha: Uzivatel napise sve jmeno a program ho pozdravi
-        String pozdrav3 = "Ahoj, ";
+        /*String pozdrav3 = "Ahoj, ";
         Scanner mujScanner = new Scanner(System.in);
         System.out.println("Zadej sve jemno:");
         String jmeno = mujScanner.nextLine();
-        System.out.println(pozdrav3 + jmeno);
+        System.out.println(pozdrav3 + jmeno);*/
+
+        //Kalkulacka
+        float prvniCislo;
+        float druheCislo;
+        Scanner mujScanner = new Scanner(System.in);
+
+        System.out.println("Zadej prvni cislo:");
+        prvniCislo = mujScanner.nextFloat();
+
+        System.out.println("Zadej druhe cislo:");
+        druheCislo = mujScanner.nextFloat();
+
+
+        System.out.println(prvniCislo + druheCislo);
+        System.out.println(prvniCislo - druheCislo);
+        System.out.println(prvniCislo * druheCislo);
+        System.out.println(prvniCislo / druheCislo);
 
 
 
