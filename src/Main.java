@@ -75,8 +75,8 @@ public class Main {
         druheCislo = mujScanner.nextInt();
 
 
-        System.out.println(prvniCislo + druheCislo);
-        System.out.println(prvniCislo - druheCislo);
+        System.out.println(prvniCislo == druheCislo);
+        System.out.println(prvniCislo >= druheCislo);
         System.out.println(prvniCislo % druheCislo);
 
         System.out.println(prvniCislo <= druheCislo);
