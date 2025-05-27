@@ -64,24 +64,22 @@ public class Main {
 
         //int prevedeneCislo = Integer.parseInt("5");
 
-        int prvniCislo = 8;
-        int druheCislo =3;
-        //prvniCislo =  prvniCislo + druheCislo;
-        //prvniCislo += druheCislo;
+        int prvniCislo;
+        int druheCislo;
+        Scanner mujScanner = new Scanner(System.in);
+
+        System.out.println("Zadej prvni cislo:");
+        prvniCislo = mujScanner.nextInt();
+
+        System.out.println("Zadej druhe cislo:");
+        druheCislo = mujScanner.nextInt();
+
 
         System.out.println(prvniCislo + druheCislo);
         System.out.println(prvniCislo - druheCislo);
         System.out.println(prvniCislo % druheCislo);
 
-
-
-
-
-
-
-
-
-
+        System.out.println(prvniCislo <= druheCislo);
 
 
     }
