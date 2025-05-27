@@ -62,6 +62,8 @@ public class Main {
 
         System.out.println(slovo.);*/
 
+        //int prevedeneCislo = Integer.parseInt("5");
+
 
 
 
