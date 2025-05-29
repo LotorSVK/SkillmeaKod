@@ -64,7 +64,7 @@ public class Main {
 
         //int prevedeneCislo = Integer.parseInt("5");
 
-        int prvniCislo;
+        /*int prvniCislo;
         int druheCislo;
         Scanner mujScanner = new Scanner(System.in);
 
@@ -79,7 +79,9 @@ public class Main {
         System.out.println(prvniCislo >= druheCislo);
         System.out.println(prvniCislo % druheCislo);
 
-        System.out.println(prvniCislo <= druheCislo);
+        System.out.println(prvniCislo <= druheCislo);*/
+
+
 
 
     }
