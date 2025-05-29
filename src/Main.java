@@ -81,6 +81,34 @@ public class Main {
 
         System.out.println(prvniCislo <= druheCislo);*/
 
+       /*int cisloKPorovnani = 5;
+
+        System.out.println(cisloKPorovnani > 0 && cisloKPorovnani <= 8);
+        System.out.println(cisloKPorovnani > 8 || cisloKPorovnani < 0);
+        System.out.println(!(cisloKPorovnani > 8 || cisloKPorovnani < 0));*/
+
+        //Feature pre kontrolu veku, ako bude mať užívateľ 18 a viac vypíš do konzoly vitaj v aplikácii
+        int vek ;
+        Scanner mujScaner = new Scanner(System.in);
+
+        System.out.println("Zadaj vek");
+        vek = mujScaner.nextInt();
+
+        if (vek >= 18 && vek < 65) {
+            System.out.println("Užívateľ je dospelý");
+        }
+        else if (vek >= 65) {
+            System.out.println("Užívateľ je senior");
+        }
+        else if (vek >= 0 && vek <18) {
+            System.out.println("Užívatel je neplnoletý");
+        }
+        else {
+            System.out.println("Nedá sa zadať záporný vek");
+        }
+
+
+
 
 
 
