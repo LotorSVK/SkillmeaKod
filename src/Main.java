@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -88,28 +89,104 @@ public class Main {
         System.out.println(!(cisloKPorovnani > 8 || cisloKPorovnani < 0));*/
 
         //Feature pre kontrolu veku, ako bude mať užívateľ 18 a viac vypíš do konzoly vitaj v aplikácii
-        int vek ;
+       /* int vek ;
         Scanner mujScaner = new Scanner(System.in);
 
         System.out.println("Zadaj vek");
         vek = mujScaner.nextInt();
 
-        if (vek >= 18 && vek < 65) {
+        if (vek >= 18) {
             System.out.println("Užívateľ je dospelý");
-        }
-        else if (vek >= 65) {
-            System.out.println("Užívateľ je senior");
+            if (vek >= 65) {
+                System.out.println("Užívateľ je senior");
+            }
         }
         else if (vek >= 0 && vek <18) {
             System.out.println("Užívatel je neplnoletý");
         }
         else {
             System.out.println("Nedá sa zadať záporný vek");
+        }*/
+
+        //Vypocet BMI hmotnost(kg)/vyska(m) na druhou, vypis do konzole vysledek
+        // (<18.5) - podváha
+        // (>=18.5 && <25) - optimální váha
+        // (>=25) - nadváha
+        /*float vyska;
+        float hmotnost;
+        float bmi;
+        Scanner mujScanner = new Scanner(System.in);
+
+        System.out.println("Zadej vysku(m):");
+        vyska = mujScanner.nextFloat();
+        System.out.println("Zadej vahu(kg)");
+        hmotnost = mujScanner.nextFloat();
+        bmi = hmotnost / (vyska * vyska);
+
+        if(bmi < 18.5f && bmi >= 0) {
+            System.out.println("Uzivatel ma podvahu");
+        }
+        else if(bmi>=18.5f && bmi<25){
+            System.out.println("Uzivatel ma optimalni vahu");
+        }
+        else if(bmi>=25) {
+            System.out.println("Uzivatel ma nadvahu");
+        }
+        else {
+            System.out.println("Užívateľ zadal zápornú hmotnosť");
         }
 
+        System.out.println(bmi);*/
 
 
+        //Liche cislo = vyhrava, Sude cislo = prohrava
+        /*int hodeneCislo;
+        Random nahodnyGenerator = new Random();
 
+        System.out.println("Pre hodenie kockou stlač Enter");
+        Scanner mujScaner = new Scanner(System.in);
+        mujScaner.nextLine();
+
+        hodeneCislo = nahodnyGenerator.nextInt(1, 7);
+
+        System.out.println("Hodene číslo je: " + hodeneCislo);
+
+        if(hodeneCislo % 2 == 1) {
+            System.out.println("licha - Vyhrávaš!");
+        }
+        else {
+            System.out.println("Suda - Prehrávaš!");
+        }*/
+
+        //Switch - den v týždni
+        Scanner mujScaner = new Scanner(System.in);
+        int cisloDne;
+        System.out.println("Zadaj číslo dňa");
+        cisloDne = mujScaner.nextInt();
+
+        switch (cisloDne) {
+            case 1:
+                System.out.println("je Pondelok");
+                break;
+            case 2:
+                System.out.println("je Utorok");
+                break;
+            case 3:
+                System.out.println("je Streda");
+                break;
+            case 4:
+                System.out.println("je Štvrtok");
+                break;
+            case 5:
+                System.out.println("je Piatok");
+                break;
+            case 6:
+                System.out.println("je Sobota");
+                break;
+            case 7:
+                System.out.println("je Nedeľa");
+                break;
+        }
 
 
     }
