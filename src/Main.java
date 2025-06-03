@@ -252,11 +252,43 @@ public class Main {
         System.out.println("Tu pokračujem");*/
 
         //do..while
-        int ridiciPremena2 = 0;
+        /*int ridiciPremena2 = 0;
         do {
             System.out.println(ridiciPremena2);
             ridiciPremena2++;
-        } while (ridiciPremena2 < 5);
+        } while (ridiciPremena2 < 5);*/
+
+        //Vylepšenie ulohy hod kockami
+        int hozeneCislo;
+        Random nahodnyGenerator = new Random();
+        boolean ridiciPromenna = true;
+        String ukonceni;
+
+
+        do {
+            System.out.println("Pro hozeni kostkou stiskni enter");
+            Scanner mujScanner = new Scanner(System.in);
+            mujScanner.nextLine();
+
+            hozeneCislo = nahodnyGenerator.nextInt(1, 7);
+            System.out.println("Hozene cislo je: " + hozeneCislo);
+
+            if (hozeneCislo % 2 == 1) {
+                System.out.println("Licha - Vyhravas!");
+            } else {
+                System.out.println("Suda - Prohravas");
+            }
+
+            System.out.println("Pre koniec zadaj q");
+            ukonceni = mujScaner.nextLine();
+            if(ukonceni.equals("q")){
+                ridiciPromenna = false;
+            }
+
+
+        } while(ridiciPromenna);
+
+
 
     }
 }
