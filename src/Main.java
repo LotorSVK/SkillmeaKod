@@ -221,16 +221,42 @@ public class Main {
         System.out.println(mena);*/
 
         //Slučky
-        for(int i = 0; i < 10; i++) {
+        /*for(int i = 0; i < 10; i++) {
             //System.out.println(i * 5);
             if(i == 5){
                 //break;
                 continue;
             }
             System.out.println(i);
+            */
+        /*String[] mena = new String[] {"Lubo", "Jano", "Nikola", "Edwin", "Jano"};
+
+        for(int i = 0; i < mena.length; i++){
+            System.out.println(mena[i]);
+
         }
 
+        //foreache
+        for(String meno: mena){
+            System.out.println(meno);
+        }*/
 
+        //while
+        /*int reidiciPromena = 0;
+        while (reidiciPromena < 5){
+            System.out.println(reidiciPromena);
+            reidiciPromena++;
+
+
+        }
+        System.out.println("Tu pokračujem");*/
+
+        //do..while
+        int ridiciPremena2 = 0;
+        do {
+            System.out.println(ridiciPremena2);
+            ridiciPremena2++;
+        } while (ridiciPremena2 < 5);
 
     }
 }
